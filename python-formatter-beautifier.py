@@ -17,7 +17,6 @@ COLORS = [
     "pink",
 ]
 
-
 def get_number_of_racers():
     while True:
         racers = input("Введите количество черепах для гонки от 2 до 10: ")
@@ -67,10 +66,12 @@ def race(colors):
             if y >= HEIGHT // 2 - 10:
                 return colors[turtles.index(racer)]
 
-
-racers = get_number_of_racers()
-init_turtle()
-random.shuffle(COLORS)
-colors = COLORS[:racers]
-winner = race(colors)
-print(f"Победила черепаха {winner}")
+def main():
+    racers = get_number_of_racers()
+    init_turtle()
+    random.shuffle(COLORS)
+    colors = COLORS[:racers]
+    winner = race(colors)
+    print(f"Победила черепаха {winner}")
+if __name__ == "__main__":
+    main()
