@@ -75,3 +75,4 @@ def main():
     print(f"Победила черепаха {winner}")
 if __name__ == "__main__":
     main()
+
