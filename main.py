@@ -73,6 +73,9 @@ def main():
     colors = COLORS[:racers]
     winner = race(colors)
     print(f"Победила черепаха {winner}")
+
+
 if __name__ == "__main__":
     main()
+
 
